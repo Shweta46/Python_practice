@@ -77,11 +77,12 @@ class linkedlist:
             temp = temp.next
         temp.next = special.next
         # special = None
-    def eliminate_duplicates_from_the_list(self):
-        temp = self.head
-        while temp is None:
-            temp = temp.data
 
+    # def eliminate_duplicates_from_the_list(self):
+    #     temp = self.head
+    #     while temp is None:
+    #         p1 = temp.data
+    #         while (temp.data == p1):
 
     def detect_loop(self):
         fast = self.head
