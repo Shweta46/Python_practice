@@ -91,7 +91,6 @@ txt1 = ['lambda functions are anonymous functions.',
 'functions are objects in Python.']
 mark = map(lambda s: (True, s) if 'anonymous' in s else (False, s), txt1)
 print(list(mark))
-
 marks = [(True, txt1[i]) if 'anonymous' in txt1[i] else (False, txt1[i]) for i in range(len(txt1))]
 print(marks)
 
@@ -103,3 +102,15 @@ print(marks)
 
 s = 'Eat more fruits!'
 print(s[6:1:-1])
+
+# EXAMPLE:
+letters_amazon = '''
+We spent several years building our own database engine,
+Amazon Aurora, a fully-managed MySQL and PostgreSQL-compatible
+service with the same or better durability and availability as
+the commercial engines, but at one-tenth of the cost. We were
+not surprised when this worked.
+'''
+find = lambda x, y: x[x.find(y) - 18: x.find(y) + 18] if y in x else -1
+print(find(letters_amazon, 'SQL'))
+
