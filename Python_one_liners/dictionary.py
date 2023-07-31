@@ -114,3 +114,44 @@ not surprised when this worked.
 find = lambda x, y: x[x.find(y) - 18: x.find(y) + 18] if y in x else -1
 print(find(letters_amazon, 'SQL'))
 
+
+# COMBINING SLICING AND LIST COMPREHENSION:
+
+price = [[9.9, 9.8, 9.8, 9.4, 9.5, 9.7],
+[9.5, 9.4, 9.4, 9.3, 9.2, 9.1],
+[8.4, 7.9, 7.9, 8.1, 8.0, 8.0],
+[7.1, 5.9, 4.8, 4.8, 4.7, 3.9]]
+
+sample = [line[::2] for line in price]
+print(sample)
+
+# ************************************************************************************************************************************************
+# SLICING ASSIGNMENTS: slice assignments.
+# You’ll use slice assignments to select and replace a sequence of elements between # indices i and j by using the slicing notation lst[i:j] = [0 0 ...0]. Because # you are using slicing lst[i:j] on the left-hand side of the assignment operation (rather than on the right-hand side as done previously), the feature is # denoted as slice assignments. The idea of slice assignments is simple: replace all selected elements in the original sequence on the left with the elements on the right.
+visitors = ['Firefox', 'corrupted', 'Chrome', 'corrupted',
+'Safari', 'corrupted', 'Brave', 'corrupted',
+'One', 'corrupted', 'Opera', 'corrupted']
+print(visitors[1::2])
+print(visitors[::2])
+visitors[1::2] = visitors[::2]
+print(visitors)
+
+# LIST SLICING: ( PAGE 35)
+
+import matplotlib.pyplot as plt
+cardiac_cycle = [62, 60, 62, 64, 68, 77, 80, 76, 71, 66, 61, 60, 62]
+print(cardiac_cycle[1:-2])
+expected_cycle = cardiac_cycle[1:-2]*10
+plt.plot(expected_cycle)
+# plt.show()
+# plt.savefig('graph.png')
+
+companies = {'CoolCompany' : {'Alice' : 33, 'Bob' : 28, 'Frank' : 29},
+'CheapCompany' : {'Ann' : 4, 'Lee' : 9, 'Chrisi' : 7},
+'SosoCompany' : {'Esther' : 38, 'Cole' : 8, 'Paris' : 18}}
+print(companies.keys())
+print(companies['CoolCompany'].keys())
+print(companies['CoolCompany'].values())
+
+illegal = [x for x in companies if any(y < 9 for y in companies[x].values())]
+print(illegal)
