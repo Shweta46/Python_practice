@@ -157,7 +157,7 @@ illegal = [x for x in companies if any(y < 9 for y in companies[x].values())]
 print(illegal)
 
 # *******************************************************************************************************************************************************
-#
+
 # ZIP FUNCTION: The zip() function takes iterables iter_1, iter_2, ..., iter_n and aggregates them into a single iterable by aligning the corresponding i-th values into a single tuple. The result is an iterable of tuples.
 
 list1 = [1, 2, 3]
@@ -168,9 +168,13 @@ print('Zipped list1: ')
 print(zipped_list)
 
 print('Zipped list 2: ')
+
+# The asterisk operator * to unpack u all elements of the list. This operator removes the outer bracket of the list zipped so that the input to the zip() function consists of three iterables (the tuples (1, 4), (2, 5), (3, 6)).
 list1_new, list2_new = zip(*zipped_list)
+print('Unpacked elements from the zipped list: ')
 print(list(list1_new))
 print(list(list2_new))
 zipped_list2 = list(zip(list1_new, list2_new))
 print('Zipped list 3 (Original lists):')
 print(zipped_list2)
+
