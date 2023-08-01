@@ -155,3 +155,22 @@ print(companies['CoolCompany'].values())
 
 illegal = [x for x in companies if any(y < 9 for y in companies[x].values())]
 print(illegal)
+
+# *******************************************************************************************************************************************************
+#
+# ZIP FUNCTION: The zip() function takes iterables iter_1, iter_2, ..., iter_n and aggregates them into a single iterable by aligning the corresponding i-th values into a single tuple. The result is an iterable of tuples.
+
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+zipped_list = list(zip(list1, list2))
+print('Zipped list1: ')
+print(zipped_list)
+
+print('Zipped list 2: ')
+list1_new, list2_new = zip(*zipped_list)
+print(list(list1_new))
+print(list(list2_new))
+zipped_list2 = list(zip(list1_new, list2_new))
+print('Zipped list 3 (Original lists):')
+print(zipped_list2)
