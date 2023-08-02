@@ -1,3 +1,6 @@
+import time
+
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -22,8 +25,34 @@ class linkedlist:
             list[j+1] = min
         return list
     # Use merge sort instead o decrease the time complexity of the program
-
-
+    def merge_sort(self, s):
+        if len(s) > 1:
+            mid = len(s) // 2
+            left = s[:mid]
+            right = s[mid:]
+            self.merge_sort(left)
+            self.merge_sort(right)
+            i = 0
+            j = 0
+            k = 0
+            while i < len(left) and j < len(right):
+                if left[i] < right[j]:
+                    s[k] = left[i]
+                    i += 1
+                else:
+                    s[k] = right[j]
+                    j += 1
+                k += 1
+            while i < len(left):
+                s[k] = left[i]
+                i += 1
+                k += 1
+            while j < len(right):
+                s[k] = right[j]
+                j += 1
+                k += 1
+            print(s)
+            return s
     def sort_list(self):
         temp = self.head
         l = []
@@ -31,7 +60,10 @@ class linkedlist:
             l.append(temp.data)
             temp = temp.next
         print(l)
-        self.bub_sort(l)
+        start = time.time()
+        self.merge_sort(l)
+        end = time.time()
+        print('Time for bub sort: ', (end - start)*1000)
         print('Sorted list: ')
         print(l)
         self.head = l[0]
