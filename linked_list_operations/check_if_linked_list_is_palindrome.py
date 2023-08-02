@@ -29,6 +29,30 @@ class linkedlist:
                 return False
         return True
 
+    def isPalindrome(self, head):
+        rev = None
+        # Slow pointer
+        slow = head
+        # Fast pointer
+        fast = head
+        # Until the first half keep reversing the nodes
+        while fast and fast.next:
+            # Keep moving in double speed
+            fast = fast.next.next
+            # Keep reversing the node
+            slow_next = slow.next
+            slow.next = rev
+            rev = slow
+            slow = slow_next
+        # In case lenght of linkedlist is odd
+        if fast:
+            slow = slow.next
+        # Compare the elements
+        while rev and rev.val == slow.val:
+            slow = slow.next
+            rev = rev.next
+        return not rev
+
     def printlist(self):
         temp = self.head
         while temp:
@@ -42,6 +66,7 @@ llist.push(3)
 llist.push(3)
 llist.push(2)
 llist.push(1)
+llist.isPalindrome()
 if llist.palindrome():
     print('Palindrome.')
 else:
