@@ -21,6 +21,7 @@ class linkedlist:
                 j -= 1
             list[j+1] = min
         return list
+    # Use merge sort instead o decrease the time complexity of the program
 
 
     def sort_list(self):
