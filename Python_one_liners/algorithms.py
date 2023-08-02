@@ -66,10 +66,12 @@ print(rt13(s))
 print(rt13(rt13(s)))
 
 # PRIME NUMBERS IN A RANGE:
+num = 11
+def prime(n):
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
 
-prime = lambda x:  for i in range(x) for print('Not prime') if x % i == 0 else 
-
-
-
-
-
+primes = [n for i in range(2, num+1) if prime(i)]
+print(primes)
