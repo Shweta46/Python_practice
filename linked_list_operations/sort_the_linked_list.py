@@ -23,6 +23,7 @@ class linkedlist:
             list[j+1] = min
         return list
     # Use merge sort instead o decrease the time complexity of the program
+    
     def merge_sort(self, s):
         if len(s) > 1:
             mid = len(s) // 2
@@ -51,6 +52,7 @@ class linkedlist:
                 k += 1
             print(s)
             return s
+
     def sort_list(self):
         temp = self.head
         l = []
@@ -69,7 +71,6 @@ class linkedlist:
             self.push(l[i])
         print(l)
         return l
-
 
     def printlist(self):
         temp = self.head
