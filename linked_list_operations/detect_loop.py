@@ -27,13 +27,10 @@ class LinkedList:
 		s = set()
 		temp = self.head
 		while (temp):
-
 			if (temp in s):
 				return True
 			s.add(temp)
-
 			temp = temp.next
-
 		return False
 
 llist = LinkedList()
