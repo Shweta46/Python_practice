@@ -50,19 +50,13 @@ class Stack:
             return
 
 MyStack = Stack()
-
 MyStack.push(11)
 MyStack.push(22)
 MyStack.push(33)
 MyStack.push(44)
-
 MyStack.display()
-
 print("\nTop element is ", MyStack.peek())
-
 MyStack.pop()
 MyStack.pop()
-
 MyStack.display()
-
 print("\nTop element is ", MyStack.peek())
