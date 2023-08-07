@@ -1,22 +1,19 @@
-# creating class A
-class A :
+class class_1 :
 	def dec(func) :
 		def inner(self) :
-			print('Decoration started.')
+			print('Started.')
 			func(self)
-			print('Decoration of function completed.\n')
+			print('Completed.\n')
 		return inner
-
 	@dec
-	def fun1(self) :
-		print('Decorating - Class A methods.')
+	def func1(self) :
+		print('Class 1.')
 
-# creating class B
-class B(A) :
-	@A.dec
-	def fun2(self) :
-		print('Decoration - Class B methods.')
+class class_2(class_1) :
+	@class_1.dec
+	def func2(self) :
+		print('Class 2.')
 
-obj = B()
-obj.fun1()
-obj.fun2()
+llist = class_2()
+llist.func1()
+llist.func2()

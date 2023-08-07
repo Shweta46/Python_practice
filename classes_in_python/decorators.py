@@ -47,7 +47,7 @@ print(add_15(10))
 def hello_decorator(func):
     print('Hello, this is before function execution.')
     def inner1():
-        print('Hello, this is before function execution.')
+        print('Hello, this is during function execution.')
         func()
         print('This is after function execution.')
     return inner1
