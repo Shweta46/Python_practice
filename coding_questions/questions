@@ -1,0 +1,59 @@
+Certainly, here's a set of 100 programming challenges divided into 7 levels with a more gradual progression:
+
+**Level 1: Building Basics**
+
+1. Write a program to print "Hello, World!" to the console.
+2. Implement a program that calculates and prints the sum of two integers.
+3. Create a program that calculates the area of a rectangle given its width and height.
+4. Write a program to check if a given number is even or odd.
+5. Develop a program to calculate the factorial of a positive integer.
+
+**Level 2: Fundamental Concepts**
+
+6. Implement a program that generates the Fibonacci sequence up to the Nth term.
+7. Write a program to find the greatest common divisor (GCD) of two numbers.
+8. Create a program that calculates the Nth term of the arithmetic sequence: a, a + d, a + 2d, ...
+9. Develop a program to convert a decimal number to binary representation.
+10. Write a program to determine if a given year is a leap year.
+
+**Level 3: Intermediate Challenges**
+
+11. Implement a program to reverse a given string.
+12. Write a program that calculates the sum of digits of a positive integer.
+13. Create a program that checks if a given string is a palindrome.
+14. Develop a program that generates all prime numbers up to a given limit.
+15. Implement a function to calculate the power of a number using recursion.
+
+**Level 4: Problem-Solving Skills**
+
+16. Write a program to find the second largest element in an array.
+17. Implement a solution to find the longest common subsequence (LCS) between two strings.
+18. Create a program that simulates a basic calculator for addition, subtraction, multiplication, and division.
+19. Develop a solution to solve the "Coin Change" problem using dynamic programming.
+20. Write a program that finds the intersection point of two linked lists.
+
+**Level 5: Advanced Problem Solving**
+
+21. Implement a program to solve a quadratic equation and display its real roots.
+22. Write a solution to find the longest substring without repeating characters in a given string.
+23. Develop an algorithm to find the maximum subarray sum in a given array.
+24. Create a program that simulates a simple maze-solving robot navigating through a grid.
+25. Implement a solution to determine if a given graph is connected using Depth-First Search (DFS).
+
+**Level 6: Algorithmic Mastery**
+
+26. Write a program to solve the "0/1 Knapsack Problem" using dynamic programming.
+27. Implement a solution to find the shortest path between two nodes in a weighted graph using Dijkstra's algorithm.
+28. Develop an algorithm to sort an array using the QuickSort technique.
+29. Create a program that solves the "Longest Increasing Subsequence" problem using dynamic programming.
+30. Implement a solution to determine if a given string has balanced parentheses.
+
+**Level 7: Competitive Programming Challenges**
+
+31. Write a program to solve the "Traveling Salesman Problem" using dynamic programming.
+32. Implement a solution to solve the "Maximum Bipartite Matching" problem using the Hopcroft-Karp algorithm.
+33. Develop an algorithm to find the articulation points in an undirected graph.
+34. Create a program that solves the "Largest Rectangle in Histogram" problem using stacks.
+35. Write a solution to find the longest common subarray with equal 0s and 1s in a binary array.
+
+These 100 challenges provide a progressive journey through various programming concepts and problem-solving techniques. As you work through them, you'll gradually build your skills and confidence in tackling competitive programming problems. Happy coding!

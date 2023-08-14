@@ -1,0 +1,126 @@
+I apologize for the confusion. Here's a complete list of 100 programming challenges divided into 7 levels, designed for a more gradual progression:
+
+**Level 1: Introduction to Programming**
+
+1. Print "Hello, World!" to the console.
+2. Calculate and print the sum of two integers.
+3. Check if a number is even or odd.
+4. Calculate the area of a rectangle.
+5. Calculate the factorial of a positive integer.
+
+**Level 2: Basic Problem Solving**
+
+6. Generate and print the first N prime numbers.
+7. Convert a decimal number to binary representation.
+8. Determine if a year is a leap year.
+9. Calculate the greatest common divisor (GCD) of two numbers.
+10. Generate the Fibonacci sequence up to the Nth term.
+
+**Level 3: Strings and Sequences**
+
+11. Reverse a given string.
+12. Check if a string is a palindrome.
+13. Calculate the sum of digits of a positive integer.
+14. Find the longest substring without repeating characters.
+15. Generate all possible permutations of a string.
+
+**Level 4: Arrays and Searching**
+
+16. Find the second largest element in an array.
+17. Implement linear search for an element in an array.
+18. Implement binary search in a sorted array.
+19. Calculate the maximum subarray sum.
+20. Find the intersection point of two linked lists.
+
+**Level 5: Sorting and Algorithms**
+
+21. Implement Bubble Sort for an array.
+22. Implement Selection Sort for an array.
+23. Implement Insertion Sort for an array.
+24. Implement Merge Sort for an array.
+25. Implement QuickSort for an array.
+
+**Level 6: Advanced Algorithms**
+
+26. Implement Dijkstra's algorithm for finding the shortest path in a graph.
+27. Implement the Breadth-First Search (BFS) algorithm.
+28. Implement the Depth-First Search (DFS) algorithm.
+29. Solve the 0/1 Knapsack Problem using dynamic programming.
+30. Find the longest common subsequence (LCS) between two strings.
+
+**Level 7: Competitive Programming Challenges**
+
+31. Solve the Traveling Salesman Problem using dynamic programming.
+32. Find the maximum bipartite matching in a graph using the Hopcroft-Karp algorithm.
+33. Determine if a graph is connected using DFS or BFS.
+34. Implement the Floyd-Warshall algorithm for all-pairs shortest paths.
+35. Solve the Longest Increasing Subsequence (LIS) problem using dynamic programming.
+36. Implement a solution to check whether a graph is a tree or not.
+37. Solve the Subset Sum Problem using dynamic programming.
+38. Implement the Kadane's algorithm for maximum subarray sum.
+39. Write a program to calculate the power of a number using binary exponentiation.
+40. Solve the Coin Change Problem using dynamic programming.
+41. Implement the Union-Find data structure for efficient set operations.
+42. Implement the Bellman-Ford algorithm for single-source shortest paths.
+43. Solve the Maximum Subarray Sum with Circular Subarray problem.
+44. Implement the Edmonds-Karp algorithm for maximum flow in a network.
+45. Solve the Longest Common Prefix (LCP) problem using binary search.
+46. Implement the Prim's algorithm for Minimum Spanning Tree (MST).
+47. Solve the Eulerian Path/Circuit problem.
+48. Implement the Kruskal's algorithm for Minimum Spanning Tree (MST).
+49. Solve the Strongly Connected Components (SCC) problem using Kosaraju's algorithm.
+50. Implement the Bipartite Graph Check algorithm using BFS.
+51. Solve the Knapsack Problem with Fractional Items using Greedy algorithm.
+52. Implement the A* algorithm for pathfinding in a grid.
+53. Solve the Josephus Problem using recursion.
+54. Implement the Topological Sorting algorithm for a Directed Acyclic Graph (DAG).
+55. Solve the Longest Palindromic Substring problem.
+56. Implement the Counting Sort algorithm for integer sorting.
+57. Solve the N-Queens problem using Backtracking.
+58. Implement the Radix Sort algorithm for integer sorting.
+59. Solve the Edit Distance problem using dynamic programming.
+60. Implement the LCA (Lowest Common Ancestor) algorithm for a binary tree.
+61. Solve the Maximal Independent Set problem for a graph.
+62. Implement the Hungarian algorithm for the assignment problem.
+63. Solve the Maximum Bipartite Matching problem using augmenting paths.
+64. Implement the Floyd-Warshall algorithm for all-pairs shortest paths with path reconstruction.
+65. Solve the Longest Palindromic Subsequence problem using dynamic programming.
+66. Implement the AVL Tree data structure and operations.
+67. Solve the Convex Hull problem using the Graham Scan algorithm.
+68. Implement the Ford-Fulkerson algorithm for maximum flow in a network.
+69. Solve the 3-SUM problem using a Two-Pointer approach.
+70. Implement the Josephus Problem with O(log N) time complexity.
+71. Solve the Longest Increasing Subarray with at most K distinct elements problem.
+72. Implement the Heavy-Light Decomposition technique on trees.
+73. Solve the Maximum Subarray Sum with at most K elements problem.
+74. Implement the Manacher's algorithm for finding the Longest Palindromic Substring.
+75. Solve the Maximum Subarray Sum with at most one deletion problem.
+76. Implement the Mo's Algorithm for Offline Queries.
+77. Solve the Minimum Vertex Cover problem in a tree.
+78. Implement the Ford-Fulkerson algorithm with Edmonds-Karp improvements.
+79. Solve the
+
+ Shortest Path with exactly K edges problem.
+80. Implement the Suffix Array data structure and LCP array construction.
+81. Solve the Longest Common Subarray problem.
+82. Implement the Trie data structure for efficient string operations.
+83. Solve the Maximum Path Sum in a Binary Tree problem.
+84. Implement the Interval Tree data structure for range queries.
+85. Solve the Maximum Subarray Sum in a Circular Array problem.
+86. Implement the Heavy-Light Decomposition with segment tree for path queries.
+87. Solve the Minimum Spanning Tree (MST) problem using Boruvka's algorithm.
+88. Implement the KMP (Knuth-Morris-Pratt) string searching algorithm.
+89. Solve the Closest Pair of Points problem using the Divide and Conquer technique.
+90. Implement the Treap data structure for efficient set operations.
+91. Solve the Matrix Exponentiation problem for efficient Fibonacci number calculation.
+92. Implement the Sparse Table data structure for range queries.
+93. Solve the Shortest Path with exactly K distinct vertices problem.
+94. Implement the Boyer-Moore string searching algorithm.
+95. Solve the Longest Common Increasing Subsequence problem.
+96. Implement the Persistent Segment Tree data structure.
+97. Solve the Longest Increasing Path in a Matrix problem.
+98. Implement the Aho-Corasick string searching algorithm.
+99. Solve the Longest Path in a Directed Acyclic Graph (DAG) problem.
+100. Implement the Z Algorithm for pattern matching.
+
+These challenges are designed to provide a gradual progression from basic programming concepts to more advanced algorithmic problem-solving techniques. Completing them will equip you with a strong foundation in competitive programming.
