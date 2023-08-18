@@ -10,16 +10,14 @@ for j in range(len(list1)-1):
     print( )
 print(list1)
 
-def bub(s):
+def bubble_sort(s):
     n = len(s)
     for i in range(n):
-        for j in range(0, n-i-1):
+        for j in range(n-i-1):
             if s[j] > s[j+1]:
                 s[j], s[j+1] = s[j+1], s[j]
-            else:
-                print(s)
     return s
-
 s = [1,2,1,1,4,9,0,1]
 print(s)
-print(bub(s))
+print(bubble_sort(s))
+

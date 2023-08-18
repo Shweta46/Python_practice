@@ -1,11 +1,11 @@
-def partition_function(array, low, high):
-    pivot = array[high]
+def partition_function(s, low, high):
+    pivot = s[high]
     i = low - 1
     for j in range(low, high):
-        if array[j] <= pivot:
+        if s[j] <= pivot:
             i = i + 1
-            array[j], array[i] = array[i], array[j]
-    array[i+1], array[high] = array[high], array[i+1]
+            s[j], s[i] = s[i], s[j]
+    s[i+1], s[high] = s[high], s[i+1]
     return i+1
 
 def quick_sort(array, low, high):

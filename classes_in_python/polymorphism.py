@@ -101,17 +101,12 @@ class Dog:
     def quack(self):
         print("Woof!")
 
-class Robot:
-    def beep(self):
-        print("Beep!")
-
 def make_sound(entity):
     entity.quack()
     
 print("\nquack method use: ")
 duck = Duck()
 dog = Dog()
-robot = Robot()
 
 make_sound(duck)
 make_sound(dog)

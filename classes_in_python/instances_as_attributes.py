@@ -1,7 +1,8 @@
 # *********************************************************************************************************************************************
-# You’ll find that you have a growing list of attributes and methods and that your files are becoming lengthy. In these situations, you might recognize that part of one class can be written as a separate class. You can break your large class into smaller classes that work together.
+# You’ll find that you have a growing list of attributes and methods and that your files are becoming lengthy.
+# In these situations, you might recognize that part of one class can be written as a separate class. You can break your large class into smaller classes that work together.
 
-class Car():
+class Car:
     def __init__(self, make, model, year):
         self.make = make
         self.model = model

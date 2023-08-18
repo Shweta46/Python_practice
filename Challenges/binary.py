@@ -3,7 +3,6 @@ def binary(n, l):
         j = n // 2
         binary(j, l)
         print(n % 2)
-
     else:
         return 0
 

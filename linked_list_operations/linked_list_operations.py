@@ -24,7 +24,8 @@ class linkedlist:
                 break
             prev = temp
             temp = temp.next
-        if temp is None:
+
+        if temp is None: # for when the element is not present in the list
             return
         prev.next = temp.next
         temp = None

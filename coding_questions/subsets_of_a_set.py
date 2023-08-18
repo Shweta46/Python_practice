@@ -29,5 +29,5 @@ def get_powerset(a):
         subsets.append(partial_subset[:] + [first_element])
     return subsets
 
-# print(list(powerset(s)))
-print(list(get_powerset(s)))
+print(list(powerset(s)))
+# print(list(get_powerset(s)))

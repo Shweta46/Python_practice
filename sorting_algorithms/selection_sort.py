@@ -1,18 +1,15 @@
 # Selection sort in Python
 # time complexity O(n*n)
 # sorting by finding min_index
-def sort(a, n):
-    for i in range(size):
+def selection_sort(s):
+    n = len(s)
+    for i in range(n):
         min = i
-        for j in range(i+1, size):
-            if a[j] < a[min]:
+        for j in range(i+1, n):
+            if s[j] < s[min]:
                 min = j
-        a[i], a[min] = a[min], a[i]
+        s[i], s[min] = s[min], s[i]
+    return s
 
 arr = [-2, 45, 0, 11, -9, 88, -97, -202, 747]
-size = len(arr)
-# selectionSort(arr, size)
-sort(arr, size)
-print('The array after sorting in Ascending Order by selection sort is:')
-print(arr)
-
+print(selection_sort(arr))
