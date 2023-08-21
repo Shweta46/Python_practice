@@ -10,11 +10,10 @@ class doublylinkedlist:
 
     def push(self, new_data):
         new_node = Node(new_data)
-        new_node.next = self.head
+        self.head.next = new_node
         if self.head is not None:
             self.head.prev = new_node
         self.head = new_node
-
     def printlist(self):
         temp = self.head
         while temp:
