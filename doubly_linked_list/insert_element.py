@@ -1,10 +1,10 @@
 class Node:
     def __init__(self, data):
         self.data = data
-        self.next = None
-        self.previous = None
+        self.left = None
+        self.right = None
 
-class linkedlist:
+class Doublyll:
     def __init__(self):
         self.head = None
 
@@ -15,42 +15,39 @@ class linkedlist:
             self.head.prev = new_node
         self.head = new_node
 
-    def deletion(self, value):
+    def delete_value(self, value):
         temp = self.head
-        if temp is not None:
-            if temp.data == value:
-                self.head = temp.next
-                temp = None
-                return
+        if temp is None:
+            return
         while temp is not None:
             if temp.data == value:
                 break
-            prev1 = temp
+            prev = temp
             temp = temp.next
         if temp is None:
             return
-        prev1.next = temp.next
-        temp.next.prev = prev1
-        temp = None
+        prev.next = temp.next
+        temp.next.prev = prev
+        temp.next = None
 
-    def deletion_using_position(self, pos):
+    def delete_pos(self, pos):
         temp = self.head
         if temp is None:
             return
         if pos == 0:
             self.head = temp.next
+            temp.next.prev = None
             temp = None
-            return
         for i in range(pos - 1):
-            temp = temp.next
             if temp is None:
                 break
+            temp = temp.next
         if temp is None:
             return
         t2 = temp.next.next
-        # temp.next = None
-        temp.next = t2
         t2.prev = temp
+        temp.next = None
+        temp.next = t2
 
     def printlist(self):
         temp = self.head
@@ -58,40 +55,15 @@ class linkedlist:
             print(temp.data)
             temp = temp.next
 
-llist = linkedlist()
+llist = Doublyll()
 llist.push(1)
 llist.push(2)
 llist.push(3)
 llist.push(4)
 llist.push(5)
 llist.printlist()
-llist.deletion(2)
+llist.delete_pos(0)
 print("After deletion: ")
 llist.printlist()
 print("Specific data: ")
-print(llist.head.next.next.next.prev.data)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+print(llist.head.next.prev.data)

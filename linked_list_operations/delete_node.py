@@ -11,6 +11,7 @@ class linkedlist:
         newnode = Node(newdata)
         newnode.next = self.head
         self.head = newnode
+
     def deletenode(self, position):
         if self.head is None:
             return
@@ -33,7 +34,7 @@ class linkedlist:
 
     def printlist(self):
         temp = self.head
-        while(temp.next != None):
+        while temp:
             print(temp.data)
             temp = temp.next
 
