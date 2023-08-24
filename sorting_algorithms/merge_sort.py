@@ -1,10 +1,10 @@
-def merge_sort(s):
+def merge(s):
     if len(s) > 1:
         mid = len(s)//2
         left = s[:mid]
         right = s[mid:]
-        merge_sort(left)
-        merge_sort(right)
+        merge(left)
+        merge(right)
         i = 0
         j = 0
         k = 0
@@ -26,5 +26,36 @@ def merge_sort(s):
             k += 1
 
 myList = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-merge_sort(myList)
+merge(myList)
 print(myList)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

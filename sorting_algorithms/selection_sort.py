@@ -1,6 +1,3 @@
-# Selection sort in Python
-# time complexity O(n*n)
-# sorting by finding min_index
 def selection_sort(s):
     n = len(s)
     for i in range(n):
@@ -10,6 +7,7 @@ def selection_sort(s):
                 min = j
         s[i], s[min] = s[min], s[i]
     return s
+
 
 arr = [-2, 45, 0, 11, -9, 88, -97, -202, 747]
 print(selection_sort(arr))
