@@ -1,10 +1,23 @@
-def binary(n, l):
+def binary(n):
     if n > 0:
         j = n // 2
-        binary(j, l)
+        binary(j)
         print(n % 2)
     else:
         return 0
 
-l = []
-p = binary(12, l)
+n = 10
+binary(n)
+
+print("Another function: ")
+def decimal_to_binary(decimal):
+    base = ""
+    if decimal == 0:
+        return 0
+    else:
+        while decimal != 0:
+            base = str(decimal % 2) + base
+            decimal //= 2
+        return int(base)
+
+print(binary(0))
