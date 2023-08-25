@@ -6,11 +6,6 @@ class Node:
 
 class Tree:
 
-    def insert(self, data):
-        if data:
-            if data < self.data:
-                self.left = self.left(root.data)
-
     def preorder(self, root):
         if root:
             print(root.data, end=" ")
@@ -26,15 +21,22 @@ class Tree:
     def inorder(self, root):
         if root:
             self.inorder(root.left)
-            print(root.data, end=' ')
+            print(root.data, end=" ")
             self.inorder(root.right)
 
-    def height(self, root):
+    def height1(self, root):
         if root is None:
             return 0
-        left = self.height(root.left)
-        right = self.height(root.right)
+        left = self.height1(root.left)
+        right = self.height1(root.right)
         return max(left, right) + 1
+
+    def mirror_image(self, root):
+        if root is None:
+            return 0
+        self.mirror_image(root.left)
+        self.mirror_image(root.right)
+        root.left, root.right = root.right, root.left
 
 root = Node(1)
 root.left = Node(2)
@@ -52,8 +54,10 @@ t.inorder(root)
 print("\nPostorder: ")
 t.postorder(root)
 print("\nHeight of tree: ")
-print(t.height(root))
-
+print(t.height1(root))
+print(t.mirror_image(root))
+print("\nInorder: ")
+t.inorder(root)
 
 # def preorder_stack(self,root):
 #     p=[]
