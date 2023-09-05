@@ -44,7 +44,7 @@ class linkedlist:
             slow.next = rev
             rev = slow
             slow = slow_next
-        # In case lenght of linkedlist is odd
+        # In case length of linkedlist is odd
         if fast:
             slow = slow.next
         # Compare the elements

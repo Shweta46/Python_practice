@@ -1,4 +1,4 @@
-def insertion(s):
+def insertion_sort(s):
     n = len(s)
     for i in range(n):
         key = s[i]
@@ -9,7 +9,6 @@ def insertion(s):
         s[j+1] = key
 
 arr = [12, 11, 13, 5, 6]
-insertion(arr)
+print("Array of unsorted: ")
+insertion_sort(arr)
 print(arr)
-
-

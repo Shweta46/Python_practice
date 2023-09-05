@@ -44,7 +44,7 @@ def bits_required_to_convert_a_to_b(s, t):
 def swap_bits_in_given_locations(s):
     pass
 
-a = 16
+a = 6
 print(bin(a))
 print(set_the_bit(a, 2))
 print(clear_a_bit(a, 3))

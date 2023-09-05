@@ -26,4 +26,45 @@ def primesum(n):
         if is_prime[i] and is_prime[n - i]:
             return [i, n - i]
 
-print(primesum(16777214))
+# print(primesum(16777214))
+
+
+def SieveOfEratosthenes(n, a):
+    a = [True for i in range(n + 1)]
+    a[0] = a[1] = False
+    p = 2
+    while p * p <= n:
+        if (a[p] == True):
+            for i in range(p * p, n + 1, p):
+                a[i] = False
+        p += 1
+    return a
+
+def findPrimePair(n):
+    a = [0] * (n + 1)
+    a = SieveOfEratosthenes(n, a)
+    for i in range(0, n):
+        if a[i] and a[n - i]:
+            print(i, (n - i))
+            return
+def prime_sum(n):
+    a = [0] * (n+1)
+    a = [1 for i in range(n+1)]
+    a[0] = a[1] = 0
+    p = 2
+    while p*p <= n:
+        if(a[p] == 1):
+            for i in range(p*p, n+1, p):
+                a[i] = 0
+        p += 1
+    print(a)
+    for i in range(0, n):
+        if a[i] and a[n-i]:
+            print(i, (n-i))
+            return
+
+n = 10
+prime_sum(n)
+# a = [0] * (n + 1)
+# print(SieveOfEratosthenes(n, a))
+findPrimePair(n)
