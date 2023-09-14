@@ -8,6 +8,5 @@ def selection_sort(s):
         s[i], s[min] = s[min], s[i]
     return s
 
-
 arr = [-2, 45, 0, 11, -9, 88, -97, -202, 747]
 print(selection_sort(arr))
