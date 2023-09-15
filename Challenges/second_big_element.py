@@ -7,10 +7,10 @@ def second_largest_element(s):
             second_largest = largest
             largest = num
         elif num > second_largest and num < largest:
-            second_largest = num
+            second_largest = num #to check if the last element is the second largest element or not
 
     return second_largest
 
-l = [3,3,1,10,23,100]
+l = [3,3,1,10,23,100, 99]
 print(second_largest_element(l))
 
