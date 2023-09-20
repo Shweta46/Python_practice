@@ -2,14 +2,14 @@ def binary(n):
     if n > 0:
         j = n // 2
         binary(j)
-        print(n % 2)
+        print(n % 2, end="")
     else:
         return 0
 
 n = 10
 binary(n)
 
-print("Another function: ")
+print("\nAnother function: ")
 def decimal_to_binary(decimal):
     base = ""
     if decimal == 0:

@@ -8,3 +8,7 @@ def distribute(A, B, C):
 
 print(solve(8, 5, 2))
 print(distribute(8, 5, 2))
+
+# A items are to be delivered in a circle of size B.
+# Find the position where the Ath item will be
+# delivered if we start from a given position C.

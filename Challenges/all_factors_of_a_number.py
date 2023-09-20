@@ -7,9 +7,8 @@ def allFactors(a):
             continue
     return l
 
-n = 98145448
-# print(allFactors(n))
-
+n = 100
+print(allFactors(n))
 print("More efficient solution: ")
 
 def all_factors(n):
