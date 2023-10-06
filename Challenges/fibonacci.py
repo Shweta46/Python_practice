@@ -19,7 +19,7 @@ def print_fib(n):
     elif n == 0 or n == 1:
         print(0)
 
-n = 5
+n = 6
 print(fibonacci(n))
 print('Now:')
 print(print_fib(n))
