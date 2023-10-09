@@ -17,6 +17,7 @@ def bubble_sort(s):
             if s[j] > s[j+1]:
                 s[j], s[j+1] = s[j+1], s[j]
     return s
+
 s = [1,2,1,1,4,9,0,1]
 print(s)
 print(bubble_sort(s))
