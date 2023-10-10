@@ -10,4 +10,3 @@ def towerOfHanoi(n, source, destination, auxiliary):
 n = 4
 towerOfHanoi(n, 'A', 'B', 'C')
 # A, C, B are the name of rods
-
