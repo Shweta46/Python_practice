@@ -5,7 +5,7 @@ def bitExtracted(number, k, p):
 number = 171
 print(bin(number))
 k = 5
-p = 2
+p = 1
 print ("The extracted number is ", bitExtracted(number, k, p))
 
 def set(a, pos):
