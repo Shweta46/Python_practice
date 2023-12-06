@@ -15,8 +15,6 @@ def method_1():
         t = Thread(target=myfunc, args=(i,mutex))
         t.start()
         print("main loop", i)
-
-
 def method_2():
     print("Method 2:")
     mutex = Lock()
