@@ -25,7 +25,7 @@ def merge(s):
             j += 1
             k += 1
 
-myList = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+myList = [54, 26, 93, 17, 77, 31, 44, 55, 20, -1, 0]
 merge(myList)
 print(myList)
 

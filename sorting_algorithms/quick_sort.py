@@ -3,7 +3,7 @@ def partition(s, low, high):
     i = low - 1
     for j in range(low, high):
         if s[j] <= pivot:
-            i = i + 1
+            i += 1
             s[i], s[j] = s[j], s[i]
     s[i+1], s[high] = s[high], s[i+1]
     return i+1

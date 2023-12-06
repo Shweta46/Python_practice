@@ -25,7 +25,7 @@ toggle(num1, pos1)
 v = -20
 print(v)
 sign = (v > 0) - (v < 0)
-print(sign)
+print("Sign is:", sign)
 
 # TO CHECK IF THE SIGN OF TWO NUMBERS IS DIFFERENT OR SAME
 x = -7
@@ -50,16 +50,22 @@ print(a,b)
 
 # TO SEE IF A NUMBER IS A POWER OF 2 NUMBER. E.G., 2,4,8,16,ETC
 v = 17
-if (v&(v-1)) == 0:
+if (v & (v-1)) == 0:
     print("True")
 else:
     print("Nope")
 
 # TO NEGATE AN INTEGER VALUE
 p = 20
+print(bin(p))
 p = ~p
-p = p +1
-print('negative p is:',p)
+print(p)
+# the NOT of a number:
+# ~3 = -4
+# ~20 = -21
+# To make it 20, we add 1 to the whole number
+p = p + 1
+print('Negative p is:', p)
 
 # TO CHECK IF AN INTEGER IS EVEN OR ODD
 t = 110
@@ -94,8 +100,9 @@ print(r<<2, r>>2)
 
 # FETCH THE BIT AT iTH POSITION FROM THE LEFT
 r = 51
-pos = 4
+pos = 3
 bit = 1 << pos
+print("Position of bit:", bin(bit))
 print(1) if (r & pos) else print(0)
 
 i = 100

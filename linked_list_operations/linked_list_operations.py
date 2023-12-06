@@ -127,10 +127,8 @@ class linkedlist:
         while p1 != p2:
             count = count + 1
             p1 = p1.next
-
         p1 = self.head
         p3 = self.head
-
 
         while p1 != p2:
             p1 = p1.next

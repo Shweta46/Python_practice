@@ -5,6 +5,7 @@ def set_the_bit(s, pos):
 def clear_a_bit(s, pos):
     p = s & ~(1 << pos)
     return p
+
 def inverting_a_bit(s, pos):
     p = s ^ (1 << pos)
     return p
@@ -20,9 +21,10 @@ def extract_bits_within_a_range(s, p1, p2):
 def calculate_hemming_weight(s):
     count = 0
     while s:
-        if (s & 1 > 0):
+        if (s & 1 == 1):
             count += 1
         s = s >> 1
+    print("The hemming weight of this:")
     return count
 
 def power_of_two(s):
@@ -44,7 +46,7 @@ def bits_required_to_convert_a_to_b(s, t):
 def swap_bits_in_given_locations(s):
     pass
 
-a = 6
+a = 15
 print(bin(a))
 print(set_the_bit(a, 2))
 print(clear_a_bit(a, 3))

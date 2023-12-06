@@ -21,4 +21,4 @@ def bubble_sort(s):
 s = [1,2,1,1,4,9,0,1]
 print(s)
 print(bubble_sort(s))
-
+print(bubb(s))
