@@ -20,7 +20,7 @@ class linkedlist:
                 temp = None
                 return
         while temp is not None:
-            if temp.data == key:
+            if temp.data == key: #so interestingly, this line is before the .next lines in order for the code to work in case we select an element thats not present in the linked list
                 break
             prev = temp
             temp = temp.next
