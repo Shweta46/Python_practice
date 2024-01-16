@@ -31,7 +31,7 @@ b = 15
 print(gcd1(a, b))
 m = 8
 n = 4
-# print(gcd(m, n))
+print(gcd(m, n))
 
 # A MUCH MUCH MUCH EASIER WAY TO DO THIS:
 

@@ -26,8 +26,18 @@ def swapbits1(n,i,j):
         print(n)
         return n
 
+# Simply
+def swap_bits2(s, i, j):
+    if ((s >> i) & 1) == ((s >> j) & 1):
+        return s
+    else:
+        mask = (1 << i) | (1 << j)
+        print(mask ^ s)
+        return bin(mask ^ s)
 n = 9
 i = 1
 j = 3
 swapbits(n, i, j)
 swapbits1(n, i, j)
+print(bin(n))
+print(swap_bits2(n, i, j))

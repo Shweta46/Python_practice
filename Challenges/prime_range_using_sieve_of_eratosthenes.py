@@ -12,7 +12,6 @@ def is_prime( a):
     else:
         return False
 
-
 def primesum(n):
     is_prime = [True] * (n + 1)
     is_prime[0], is_prime[1] = False, False

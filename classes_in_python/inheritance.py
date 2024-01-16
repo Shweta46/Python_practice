@@ -45,8 +45,8 @@ class Cat(Animal):
 generic_animal = Animal("Unknown")
 my_cat = Cat("Felis catus", "Whiskers")
 
-# generic_animal.make_sound()
-# my_cat.make_sound()
+generic_animal.make_sound()
+my_cat.make_sound()
 
 # Using super() in a subclass doesn't require that both the superclass and the subclass have methods with the same name. In fact, the purpose of using super() is to call methods from the superclass, regardless of whether the subclass has a method with the same name.
 
