@@ -69,6 +69,7 @@ class BankAccount1:
 
 my_acc = BankAccount1("Shrey", 909, 10000000)
 print(my_acc._BankAccount1__balance)
+print('account name:')
 print(my_acc.name)
 
 class TemperatureConverter:

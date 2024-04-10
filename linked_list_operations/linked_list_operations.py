@@ -163,6 +163,7 @@ class linkedlist:
             prev = current
             current = next_one
         self.head = prev
+        
     def print_the_middle(self, start, end):
         temp = self.head
         if temp is None:
